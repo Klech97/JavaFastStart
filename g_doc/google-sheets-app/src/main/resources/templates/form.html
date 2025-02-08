@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Отправка данных в Google Sheets</title>
+</head>
+<body>
+
+<h2>Заполните форму</h2>
+<form action="/submit" method="post">
+    <label>Имя:</label>
+    <input type="text" name="name" required><br>
+
+    <label>Email:</label>
+    <input type="email" name="email" required><br>
+
+    <label>Сообщение:</label>
+    <textarea name="message" required></textarea><br>
+
+    <button type="submit">Отправить</button>
+</form>
+
+</body>
+</html>
